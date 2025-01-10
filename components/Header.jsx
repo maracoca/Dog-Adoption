@@ -64,7 +64,7 @@ const Header = () => {
             Shelters
           </button>
         </a>
-        <a href="/ui">
+        <a href="/login">
           <button className="btn btn-outline border-[3px] bg-[rgb(235,232,233)] border-[rgb(184,209,209)] text-black rounded-full h-[35px] px-4">
             Log In
           </button>

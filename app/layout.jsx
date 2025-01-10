@@ -1,6 +1,7 @@
 import "./styles/header.css";
 import Header from "../components/Header";
 import "./globals.css";
+import { SessionProvider } from "next-auth/react";
 
 export const metadata = {
   title: "Next.js",
@@ -11,11 +12,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Header></Header>
-        {children}
+        <SessionProvider>
+          <Header />
+          {children}
+        </SessionProvider>
       </body>
     </html>
   );
 }
-
-

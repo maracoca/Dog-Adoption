@@ -252,6 +252,9 @@ const DogFilter = ({ dogs, breeds, qualities }) => {
               <p className="text-gray-600">Age: {dog.age}</p>
               <p className="text-gray-600">Breed: {dog.breed}</p>
               <p className="text-gray-600">Qualities: {dog.qualities}</p>
+              <button>
+                <a href={`/restricted/${dog.id}`}>Adopt</a>
+              </button>
             </div>
           </div>
         ))}
